@@ -104,7 +104,7 @@ figure:first-of-type {
   padding: 0.175rem;
 }
 
-.figcaption h3 {
+.figcaption {
   font-size: 0.813rem;
   font-weight: 700;
   color: var(--very-dark-magenta);
