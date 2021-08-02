@@ -104,7 +104,7 @@ figure:first-of-type {
   padding: 0.175rem;
 }
 
-.figcaption {
+.figcaption h3 {
   font-size: 0.813rem;
   font-weight: 700;
   color: var(--very-dark-magenta);
@@ -159,7 +159,7 @@ figure:first-of-type {
   padding: 0.175rem 1rem;
 }
 
-.testimonials-section p {
+.testimonials-section h6 {
   font-size: 0.813rem;
   font-weight: 500;
   color: var(--white);
