@@ -159,7 +159,7 @@ figure:first-of-type {
   padding: 0.175rem 1rem;
 }
 
-.testimonials-section h6 {
+.testimonials-section p {
   font-size: 0.813rem;
   font-weight: 500;
   color: var(--white);
