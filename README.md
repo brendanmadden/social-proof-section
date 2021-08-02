@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-mobile-first-social-proof-section-with-css-grid-and-flex-3v-KDZlf3)
+- Live Site URL: [GitHub Pages](https://brendanmadden.github.io/social-proof-section/)
 
 ## My process
 
