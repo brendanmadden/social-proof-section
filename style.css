@@ -36,6 +36,10 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   padding: 3rem 1rem;
+  background: url(./images/bg-pattern-top-mobile.svg),
+    url(./images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
 }
 
 .container {
@@ -46,6 +50,8 @@ body {
   text-align: center;
 }
 
+/* Heading Section */
+
 .heading-section h1 {
   font-size: 2rem;
   font-weight: 700;
@@ -53,7 +59,7 @@ body {
   word-spacing: -0.071rem;
   margin: 0 2rem;
   color: var(--very-dark-magenta);
-  max-width: 25ch;
+  max-width: 15ch;
 }
 
 .heading-section p {
@@ -68,6 +74,8 @@ body {
   margin: 0 auto;
 }
 
+/* Ratings Section */
+
 .ratings-section {
   display: flex;
   flex-direction: row;
@@ -81,7 +89,7 @@ body {
   background-color: var(--light-grayish-magenta);
   padding: 1rem;
   margin: 0.5rem 0rem;
-  border-radius: 0.75rem;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,6 +111,8 @@ figure:first-of-type {
   margin: 0.5rem 0;
 }
 
+/* Testimonials Section */
+
 .testimonials-section {
   display: flex;
   flex-direction: row;
@@ -120,7 +130,7 @@ figure:first-of-type {
 
 .testimonials-section article {
   background-color: var(--very-dark-magenta);
-  border-radius: 0.75rem;
+  border-radius: 0.5rem;
   width: 20.438rem;
   height: 15.5rem;
   display: flex;
@@ -158,13 +168,22 @@ figure:first-of-type {
   padding: 1.5rem 0;
 }
 
+/* Media Queries */
+
 @media screen and (min-width: 686px) {
-  figure:first-of-type {
-    margin-top: 0.5rem;
+  body {
+    background: url(./images/bg-pattern-top-desktop.svg),
+      url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
   }
 
   .ratings-figure {
     margin: 0.5rem;
+  }
+
+  figure:first-of-type {
+    margin-top: 0.5rem;
   }
 
   .testimonials-section {
@@ -174,5 +193,94 @@ figure:first-of-type {
   }
 }
 
-@media screen and (min-width: 1060px) {
+@media screen and (min-width: 1160px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    text-align: center;
+    max-width: 69.375rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Heading Section Large Media Query */
+
+  .heading-section {
+    text-align: left;
+    margin-left: -2rem;
+  }
+
+  .heading-section h1 {
+    max-width: 12ch;
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    line-height: 3rem;
+    letter-spacing: -0.107rem;
+  }
+
+  .heading-section p {
+    max-width: 35ch;
+    font-size: 0.938rem;
+    line-height: 1.563rem;
+    letter-spacing: -0.031rem;
+    margin-top: -0.5rem;
+    margin-left: -0.05rem;
+  }
+
+  /* Ratings Section Large Media Query */
+
+  .ratings-section {
+    max-height: 13.5rem;
+  }
+
+  .ratings-figure {
+    flex-direction: row;
+    column-gap: 1.5rem;
+    padding: 0;
+    margin: 0;
+    margin-left: 10rem;
+    max-height: 3.5rem;
+    min-width: 27.813rem;
+  }
+
+  #figure1 {
+    transform: translateX(-5rem);
+    margin-top: 0;
+  }
+
+  #figure2 {
+    transform: translateX(-2.5rem);
+  }
+
+  /* Testimonials Section Large Media Query */
+
+  .testimonials-section {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    height: 100%;
+    min-height: 20rem;
+    column-gap: 1.5rem;
+  }
+
+  #article1 {
+    align-self: start;
+  }
+
+  #article3 {
+    align-self: flex-end;
+  }
+
+  .testimonials-section article {
+    height: 14rem;
+    width: 21.875rem;
+  }
 }
